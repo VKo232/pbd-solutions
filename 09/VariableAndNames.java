@@ -1,6 +1,6 @@
 
 public class VariableAndNames {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int cars, drivers, passengers, carsNotDriven, carsDriven;
         double spaceInACar, carpoolCapacity, averagePassengersPerCar;
         // num of cars
