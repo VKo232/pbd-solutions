@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class DumbCalculator {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        double first, second, third, total;
+        
+        System.out.print("What is your first number? ");
+        first = Integer.parseInt(sc.nextLine());
+        System.out.print("What is your second number? ");
+        second = Integer.parseInt(sc.nextLine());
+        System.out.println("What is your third number? ");
+        third = Integer.parseInt(sc.nextLine());
+        total = (first + second + third) / 2;
+        //( 1.1 + 2.2 + 5.5 ) / 2 is... 4.4
+        System.out.println("( " + first + " + " + second + " + " + third + " ) / 2 is... " + total);
+        
+    }
+}
