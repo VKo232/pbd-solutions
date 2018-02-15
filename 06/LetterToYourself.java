@@ -1,16 +1,16 @@
-
 public class LetterToYourself {
     public static void main(String[] args) {
-        System.out.println("+---------------------------------------------------------+\n"
-            + "|                                                    #### |"
-            + "\n|                                                    #### |"
-            + "\n|                                                    #### |"
-            + "\n|                                                         |"
-            + "\n|                                                         |"
-            + "\n|                              victor ko                  |"
-            + "\n|                              1 Microsoft Way            |"
-            + "\n|                              Redmond, WA 98104          |"
-            + "\n|                                                         |" 
-            + "\n+---------------------------------------------------------+");
+        System.out.println("+---------------------------------------------------------+");
+        System.out.println("|                                                    #### |");
+        System.out.println("|                                                    #### |");                                                    #### |"
+        System.out.println("|                                                    #### |");
+        System.out.println("|                                                         |");
+        System.out.println("|                                                         |");
+        System.out.println("|                                                         |");
+        System.out.println("|                                      victor ko          |");
+        System.out.println("|                                      123 area ave       |");
+        System.out.println("|                                      ontario  l3t 23    |");
+        System.out.println("|                                                         |");
+        System.out.println("+---------------------------------------------------------+");
     }
 }
