@@ -3,8 +3,8 @@ public class UsingVariables {
         int room = 0;
         double euler = 2.71828;
         String course = "Computer Science";
-        System.out.println( "This is room # " + room );
-        System.out.println( "e is close to " + euler );
-        System.out.println( "I am learning a bit about " + course );
+        System.out.println("This is room # " + room);
+        System.out.println("e is close to " + euler);
+        System.out.println("I am learning a bit about " + course);
     }
 }
