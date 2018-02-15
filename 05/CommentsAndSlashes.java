@@ -2,10 +2,8 @@
 
 
 // yes 
-public class CommentsAndSlashes
-{
-    public static void main( String[] args )
-    {
+public class CommentsAndSlashes{
+    public static void main( String[] args ){
         // A comment, this is so you can read your program later.
         // Anything after the // is ignored by Java.
 
