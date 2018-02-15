@@ -1,6 +1,4 @@
 // this is victor feb 14 2018
-
-
 // It is a comment. And i guessed it correctly
 public class CommentsAndSlashes {
     public static void main(String[] args) {
