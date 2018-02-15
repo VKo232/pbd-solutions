@@ -1,7 +1,7 @@
 // this is victor feb 14 2018
 
 
-// yes 
+// It is a comment. And i guessed it correctly
 public class CommentsAndSlashes{
     public static void main( String[] args ){
         // A comment, this is so you can read your program later.
