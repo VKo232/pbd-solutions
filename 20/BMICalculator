@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class BMICalculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double feet, inch , weight, bmi; 
+        
+        System.out.print("Your height (feet only): ");
+        feet = Integer.parseInt(sc.nextLine());
+        System.out.print("Your height (inches): ");
+        inch = Integer.parseInt(sc.nextLine());
+        System.out.print("Your weight in pounds: ");
+        weight = Integer.parseInt(sc.nextLine());
+        
+        bmi = weight / Math.pow(feet * 12 + inch, 2) * 703;
+        
+        System.out.printf("Your BMI is %.2f" , bmi);
+    }
+}
