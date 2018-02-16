@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class ALittleQuiz {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int score = 0;
+        String[][] qAndA= new String[][] {
+            {"What is the capital of Alaska?", "Melbourne", "Anchorage", "Juneau", "3"},
+            {"Can you store the value \"cat\" in a variable of type int?", "yes", "no", "2"},
+            {"What is the result of 9+6/3??", "5", "11", "15/3","2"},
+        };
+        
+        System.out.println("LETS PLAY A GAME");
+        
+        for(int i = 0; i < 3; i++) {
+            System.out.println("\nQ" + (i + 1) + " " + qAndA[i][0]);
+            for(int j = 1; j < qAndA[i].length - 1; j++) {
+                System.out.println("        "+ j + ") " + qAndA[i][j]);
+            }
+            if(sc.nextLine().equals(qAndA[i][qAndA[i].length - 1])) {
+                score++;
+                System.out.println("YOU GOT IT!!!");
+            } else {
+                System.out.println("So close...\nThe answer was " + qAndA[i][qAndA[i].length - 1]);
+            }
+        }
+        
+        System.out.println("Your final score is... " + score);
+    }
+}
