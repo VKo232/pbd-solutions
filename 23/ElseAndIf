@@ -1,0 +1,42 @@
+/*
+else if statements are part of a chain of conditions after the previous if statements. If
+the previous are false then the program checks the else if. 
+If it is true, then the else or else if statements below are not checked
+else statement runs if the above conditions are false otherwise it will be skipped
+
+by removing the else of an else if statement, a new conditional structure is created
+where the program will check the condition despite the above conditions being met
+This is just like creating a new if statement which is not affected by the statements on top
+*/
+public class ElseAndIf {
+	public static void main(String[] args) {
+		int people = 30;
+		int cars = 40;
+		int buses = 15;
+
+		if(cars > people) {
+			System.out.println("We should take the cars.");
+		}  
+        if(cars < people) {
+			System.out.println("We should not take the cars.");
+		} else {
+			System.out.println("We can't decide.");
+		}
+
+		if(buses > cars) {
+			System.out.println("That's too many buses.");
+		} else if (buses < cars) {
+			System.out.println("Maybe we could take the buses.");
+		} else {
+			System.out.println("We still can't decide.");
+		}
+
+
+		if(people > buses) {
+			System.out.println("All right, let's just take the buses.");
+		} else {
+			System.out.println("Fine, let's stay home then.");
+		}
+
+	}
+}
