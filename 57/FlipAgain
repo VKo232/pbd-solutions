@@ -1,5 +1,6 @@
 import java.util.*;
 
+// the program still works because a value must be entered in again so that it can be checked later
 public class FlipAgain {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
