@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class RightTriangleCheck {
+    public static void main( String[] args ) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter three integers");
+        double num1, num2, num3;
+        do {
+            System.out.print("\nSide 1: ");
+            num1 = sc.nextDouble();
+            if(num1 <= 0) {
+                System.out.println("Side 1 must be greater than 0");
+            }
+        } while(num1 <= 0);
+        do {
+            System.out.print("\nSide 2: ");
+            num2 = sc.nextDouble();
+            if(num2 < num1) {
+                System.out.println("\n" + num2 + " is smaller than " + num1 + " . Try again");
+            }
+        } while(num1 > num2); 
+        do {
+            System.out.print("\nSide 3: ");
+            num3 = sc.nextDouble();
+            if(num3 < num2) {
+                System.out.println("\n" + num3 + " is smaller than " + num2 + " . Try again");
+            }
+        } while(num2 > num3);         
+
+        System.out.println("The sides are " + num1 + " " + num2 + " " + num3);
+        if(Math.sqrt(Math.pow(num1, 2) + Math.pow(num2, 2)) == num3) {
+            System.out.println("YES, it's a right angle triangle");
+        } else {
+            System.out.println("NO, it is not a right angle triangle");
+        }
+        
+    }
+}
