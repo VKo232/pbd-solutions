@@ -1,62 +1,62 @@
 import java.util.Scanner;
 
 public class ChooseAdventure {
-	public static void main(String args[]) {
-		Scanner sc = new Scanner(System.in);
-		String answer;
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        String answer;
 
-		System.out.println("ADVENTURE!\n");
+        System.out.println("ADVENTURE!\n");
 
-		System.out.println("You are in main floor. move (left) (right)");
-		System.out.print(">");
-		answer = sc.nextLine();
-		if (answer.equals("left")) {
-			System.out.println("You're in left hall. move (left) (right)");
-			System.out.print(">");
-			answer = sc.nextLine();
-			if (answer.equals("left")) {
-				System.out.println("You're in left left hall. move (left) (right)");
-				System.out.print(">");
-				answer = sc.nextLine();
-				if (answer.equals("left")) {
-					System.out.println("You're in left left left hall. congradulations");
-				} else {
-					System.out.println("You're in left left right hall. you did ok");
-				}
-			} else {
-				System.out.println("You're in left right hall. move (left) (right)");
-				System.out.print(">");
-				answer = sc.nextLine();
-				if (answer.equals("left")) {
-					System.out.println("You're in left right left hall. meh");
-				} else {
-					System.out.println("You're in left right right hall. you did slightly better");
-				}
-			}
-		} else {
-			System.out.println("You're in the right hall. move (left) (right)");
-			if (answer.equals("left")) {
-				System.out.println("You're in right left hall. move (fwd) (left)");
-				System.out.print(">");
-				answer = sc.nextLine();
-				if (answer.equals("left")) {
-					System.out.println("You're in right left left hall. so close...");
+        System.out.println("You are in main floor. move (left) (right)");
+        System.out.print(">");
+        answer = sc.nextLine();
+        if (answer.equals("left")) {
+            System.out.println("You're in left hall. move (left) (right)");
+            System.out.print(">");
+            answer = sc.nextLine();
+            if (answer.equals("left")) {
+                System.out.println("You're in left left hall. move (left) (right)");
+                System.out.print(">");
+                answer = sc.nextLine();
+                if (answer.equals("left")) {
+                    System.out.println("You're in left left left hall. congradulations");
+                } else {
+                    System.out.println("You're in left left right hall. you did ok");
+                }
+            } else {
+                System.out.println("You're in left right hall. move (left) (right)");
+                System.out.print(">");
+                answer = sc.nextLine();
+                if (answer.equals("left")) {
+                    System.out.println("You're in left right left hall. meh");
+                } else {
+                    System.out.println("You're in left right right hall. you did slightly better");
+                }
+            }
+        } else {
+            System.out.println("You're in the right hall. move (left) (right)");
+            if (answer.equals("left")) {
+                System.out.println("You're in right left hall. move (fwd) (left)");
+                System.out.print(">");
+                answer = sc.nextLine();
+                if (answer.equals("left")) {
+                    System.out.println("You're in right left left hall. so close...");
 
-				} else {
-					System.out.println("You're in right left right hall. You fall in a pitfall");
-				}
-			} else {
-				System.out.println("You're in the right right hall. move (left) (right)");
-				System.out.print(">");
-				answer = sc.nextLine();
-				if (answer.equals("left")) {
-					System.out.println("You're in right right left hall. so close...");
+                } else {
+                    System.out.println("You're in right left right hall. You fall in a pitfall");
+                }
+            } else {
+                System.out.println("You're in the right right hall. move (left) (right)");
+                System.out.print(">");
+                answer = sc.nextLine();
+                if (answer.equals("left")) {
+                    System.out.println("You're in right right left hall. so close...");
 
-				} else {
-					System.out.println("You're in right right right hall. You fall in a pitfall");
-				}
-			}
-		}
-		System.out.println("You're done my painfully long game that I'm sure is working.");
-	}
+                } else {
+                    System.out.println("You're in right right right hall. You fall in a pitfall");
+                }
+            }
+        }
+        System.out.println("You're done my painfully long game that I'm sure is working.");
+    }
 }
