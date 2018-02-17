@@ -8,7 +8,7 @@ public class CountingWhile {
 		System.out.print( "Message: " );
 		String message = keyboard.nextLine();
         System.out.print("number of times: ");
-        int num = sc.nextInt();
+        int num = keyboard.nextInt();
         
         int n = 1;
 		while (n <= num) {
