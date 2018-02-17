@@ -6,7 +6,7 @@ public class Dice {
         sum = 0;
         int num;
 
-        System.out.println("Here comes the dice!);
+        System.out.println("Here comes the dice!");
         for(int i = 0; i < 2; i++) {
             num = rand.nextInt(6) + 1;
             System.out.print("\nroll number " + i + ": " + num);
