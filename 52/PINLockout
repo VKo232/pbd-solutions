@@ -1,0 +1,36 @@
+import java.util.*;
+/*
+else if statements are part of a chain of conditions after the previous if statements. If
+the previous are false then the program checks the else if.
+If it is true, then the else or else if statements below are not checked
+else statement runs if the above conditions are false otherwise it will be skipped
+
+by removing the else of an else if statement, a new conditional structure is created
+where the program will check the condition despite the above conditions being met
+This is just like creating a new if statement which is not affected by the statements on top
+*/
+public class PINLockout {
+    public static void main( String[] args ) {
+        Scanner keyboard = new Scanner(System.in);
+        int pin = 12345;
+        int tries = 0;
+        int maxTries = 4;
+
+        System.out.println("WELCOME TO THE BANK OF MITCHELL.");
+        System.out.print("ENTER YOUR PIN: ");
+        int entry = keyboard.nextInt();
+        tries++;
+
+        while ( entry != pin && tries < maxTries ) {
+            System.out.println("\nINCORRECT PIN. TRY AGAIN.");
+            System.out.print("ENTER YOUR PIN: ");
+            entry = keyboard.nextInt();
+            tries++;
+        }
+
+        if ( entry == pin )
+            System.out.println("\nPIN ACCEPTED. YOU NOW HAVE ACCESS TO YOUR ACCOUNT.");
+        else if ( tries >= maxTries )
+            System.out.println("\nYOU HAVE RUN OUT OF TRIES. ACCOUNT LOCKED.");
+    }
+}
