@@ -1,0 +1,12 @@
+public class CompareTo {
+    public static void main(String[] args) {
+        
+        String[] arr1 = {"apple", "banana", "aear", "aruit", "idk", "qwer", "rtyu", "tui", "iopo", "zsaf", "qw", "as" };
+        String[] arr2 = {"apple", "banana", "pear", "fruit", "zxc", "xcxv", "vbnc", "fff", "dzzz", "ynvx", "qa", "ag" };
+        
+        for(int i =0; i < arr1.length; i++) {
+            System.out.print("\nComparing \"" + arr1[i] + "'s\" with \"" + arr2[i] + "\" produces ");
+            System.out.println(arr1[i].compareTo(arr2[i]));
+        }
+    }
+}
