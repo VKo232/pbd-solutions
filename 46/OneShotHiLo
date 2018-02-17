@@ -1,0 +1,25 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class OneShotHiLo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Random rand = new Random();
+        int guess;
+        int num = 1 + rand.nextInt(100);
+        
+        System.out.print("Im think of a num between 1-100.");
+        guess = sc.nextInt();
+        if(guess == num) {
+            System.out.print("\nYou got it somehow. ");
+        } else {
+            if(num > guess) {
+                System.out.print("\nHaha you failed. Too low. ");
+            } else {
+                System.out.print("\nHaha you failed. Too high. ");
+            }
+            System.out.println("The number was " + num);
+        }
+
+    }    
+}
