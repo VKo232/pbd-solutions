@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BabyNames {
+public class BabyNim {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] arr = {3, 3, 3};
