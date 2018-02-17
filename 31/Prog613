@@ -20,7 +20,7 @@ class Frame613 extends JFrame {
     }
 }
 class Panel {
-    public void PaintComponent(Graphics g) }
+    public void PaintComponent(Graphics g) {
         super.paintComponent(g);
         g.drawString("HI", 75, 100);
     }
