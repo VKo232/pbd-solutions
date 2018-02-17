@@ -3,7 +3,7 @@ import java.util.Random;
 public class Dice {
     public static void main(String[] args) {
         Random rand = new Random();
-        sum = 0;
+        int sum = 0;
         int num;
 
         System.out.println("Here comes the dice!");
