@@ -7,7 +7,7 @@ public class NumberGuessCounter {
         Random rand = new Random();
         int num = 1 + rand.nextInt(10);
         int guess;
-        int tries = 0;
+        int tries = 1;
         
         System.out.println("Im think of a num between 1-10.");
         System.out.print("Your guess: ");
