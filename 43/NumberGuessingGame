@@ -1,0 +1,17 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class NumberGuessingGame {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Random rand = new Random();
+        int num = 1 + rand.nextInt(10);
+        System.out.print("Im think of a num between 1-10.");
+        if(sc.nextInt() == num) {
+            System.out.print("\nYou got it somehow. ");
+        } else {
+            System.out.print("\nHaha you failed. ");
+        }
+        System.out.println("The number was " + num);
+    }    
+}
