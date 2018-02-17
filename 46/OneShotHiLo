@@ -8,7 +8,7 @@ public class OneShotHiLo {
         int guess;
         int num = 1 + rand.nextInt(100);
         
-        System.out.print("Im think of a num between 1-100.");
+        System.out.print("Im thinking of a num between 1-100: ");
         guess = sc.nextInt();
         if(guess == num) {
             System.out.print("\nYou got it somehow. ");
