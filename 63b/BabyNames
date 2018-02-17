@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class BabyNames {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] arr = {3, 3, 3};
+        System.out.println("A3   B3   C3");
+        int num;
+        String pile;
+
+        while(arr[0] > 0 || arr[1] > 0 || arr[2] > 0) {
+            System.out.print("\nWhich pile: ");
+            pile = sc.nextLine();
+            System.out.print("\nHow many");
+            num = Integer.parseInt(sc.nextLine());
+            arr[pile.compareToIgnoreCase("a")] -= num;
+            System.out.println("A" + arr[0] + "   B" + arr[1] + "   C" + arr[2]);
+        }
+        System.out.println("All done");  
+    }
+}
