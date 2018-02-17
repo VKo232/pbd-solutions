@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class AlphaOrder {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        String name;
+
+        System.out.print("Last Name: ");
+        name = sc.nextLine();
+        
+        if(name.compareToIgnoreCase("c") <= 0) {
+            System.out.println("you don't have to wait long, " + name);
+        } else if(name.compareToIgnoreCase("j") <= 0) {
+            System.out.println("That's too bad, " + name);
+        } else if(name.compareToIgnoreCase("s") <= 0) {
+            System.out.println("looks like a bit of a wait, " + name);
+        } else if(name.compareToIgnoreCase("y") <= 0) {
+            System.out.println("t's gonna be a while, " + name);
+        } else {
+            System.out.println("not going anywhere for a while, " + name);
+        }
+    } 
+}
