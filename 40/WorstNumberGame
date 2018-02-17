@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class WorstNumberGame {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("TEH WORST NUBMER GESSING GAME EVAR!!!!!!!!");
+        int num = 3;
+        System.out.print("Im think of a num between 1-10. Guess 2: ");
+        if(sc.nextInt() == num) {
+            System.out.print("\nYou got it somehow. ");
+        } else {
+            System.out.print("\nHaha you failed. ");
+        }
+        System.out.println("The number was " + num);
+    }    
+}
