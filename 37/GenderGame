@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class GenderGame {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int age; 
+        String first, last, gender, married, salutation;
+
+        System.out.print("What is your gender (M or F): ");
+        gender = sc.nextLine();
+        System.out.print("First name:");
+        first = sc.nextLine();
+        System.out.print("Last name: ");
+        last = sc.nextLine();
+        System.out.print("Age: ");
+        age = Integer.parseInt(sc.nextLine());
+        
+        
+        if(age > 20 && gender.equalsIgnoreCase("f")) {
+            System.out.print("Are you married, " + first + " (y or n)? ");
+            married = sc.nextLine();
+            if(married.equals("y")) {
+                salutation = "Mrs." + last;
+            } else {
+                salutation = "Ms." + last;
+            }
+        } else if(age >= 20) {
+            salutation = "Mr." + last;
+        } else {
+            salutation = first + last;
+        }
+        System.out.println("Then I shall call you " + salutation);
+        
+    }
+}
