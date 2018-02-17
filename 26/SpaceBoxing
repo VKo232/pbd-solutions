@@ -8,7 +8,7 @@ public class SpaceBoxing {
         
         System.out.print("Please enter your current earth weight: ");
         initWeight = Integer.parseInt(sc.nextLine());
-        System.out.println("\nI have information for the following planets:")
+        System.out.println("\nI have information for the following planets:");
         System.out.println("   1. Venus   2. Mars    3. Jupiter");
         System.out.println("   4. Saturn  5. Uranus  6. Neptune\n");
         System.out.print("Which planet are you visiting? ");
