@@ -1,0 +1,12 @@
+import javax.swing.*;
+
+public class Prog611 {
+    public static void main(String[] args) {
+        String name = new JOptionPane.showInputDialogue("What is your name?");
+        String input = new JOptionPane.showInputDialogue("How old? ");
+        int age = Integer.parseInt(input);
+        
+        System.out.println("hello " + name + ". Next year you'll be " + (age + 1));
+        System.exit(0);
+    }
+}
