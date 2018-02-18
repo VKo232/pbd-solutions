@@ -8,7 +8,7 @@ public class CountingMachine {
         int num = Integer.parseInt(sc.nextLine());
 
         for (int n = 0; n <= num; n++) {
-            System.out.println(n);
+            System.out.println(n + " ");
         }
     }
 }
