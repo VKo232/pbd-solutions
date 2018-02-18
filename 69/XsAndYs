@@ -1,0 +1,8 @@
+public class XsAndYs {
+    public static void main(String[] args){
+        System.out.println("x      y");
+        for (double n = -10.0; n <= 10.0; n += 0.5) {
+            System.out.print(n + "  " + Math.pow(n, 2));
+        }
+    }
+}
