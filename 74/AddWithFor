@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class AddWithFor {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int sum = 0;
+        System.out.print("Num times: ");
+        int times = sc.nextInt();
+
+        for (int i = 0; i < times; i++) {
+            sum += sc.nextInt();
+        }
+        
+        System.out.println("The sum is " + sum);
+
+    }
+}
