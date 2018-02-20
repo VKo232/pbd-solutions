@@ -10,7 +10,7 @@ public class FlickerPhrase{
             // Write five if statements here.
             // If r is 1, then call the function named 'first'.
             // If r is 2, then call the function named 'second', and so on.
-			switch(r) {
+            switch(r) {
                 case 1: first();
                         break;
                 case 2: second();
@@ -22,7 +22,7 @@ public class FlickerPhrase{
                 case 5: fifth();
                         break;
                 default: break;   
-
+	        }
             // Optional: after the if statements are over, add in a slight delay.
             Thread.sleep(200);
         }
