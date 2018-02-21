@@ -20,8 +20,8 @@ public class HeronsFormula {
         // the code in this function computes the area of a triangle whose sides have lengths a, b, and c
         double s, A;
 
-        s = (a+b+c) / 2;
-        A = Math.sqrt( s*(s-a)*(s-b)*(s-c) );
+        s = (a + b + c) / 2;
+        A = Math.sqrt(s * (s - a) * (s - b) * (s - c) );
 
         return A;
         // after computing the area, "return" it      
