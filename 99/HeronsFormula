@@ -1,3 +1,6 @@
+// same output
+//42 lines no functions 20 lines with functions
+// a lot easier to fix with functions
 public class HeronsFormula {
     public static void main(String[] args) {
         double a;
