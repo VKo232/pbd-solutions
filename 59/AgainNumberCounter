@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class AgainNumberCounter {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Random rand = new Random();
+        int num = 1 + rand.nextInt(10);
+        int guess;
+        int tries = 1;
+        System.out.println("Choose a number between 1 and 10");
+        do {
+            System.out.print("Your guess: ");
+            guess = sc.nextInt();
+            tries++;
+            if(num != guess) {
+                System.out.println("Try again");
+            }
+        } while(guess != num);
+        System.out.println("That's right! You're a good guesser. You go it in " + tries + " times");
+    }    
+}

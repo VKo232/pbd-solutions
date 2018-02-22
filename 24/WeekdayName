@@ -1,7 +1,7 @@
 import java.util.GregorianCalendar;
 
 public class WeekdayName {
-    public static String weekday_name(int weekday) {
+    public static String weekdayName(int weekday) {
         String result = "";
 
         if(weekday == 1) {
@@ -29,22 +29,22 @@ public class WeekdayName {
 
 
     public static void main(String[] args) {
-        System.out.println("Weekday 1: " + weekday_name(1));
-        System.out.println("Weekday 2: " + weekday_name(2));
-        System.out.println("Weekday 3: " + weekday_name(3));
-        System.out.println("Weekday 4: " + weekday_name(4));
-        System.out.println("Weekday 5: " + weekday_name(5));
-        System.out.println("Weekday 6: " + weekday_name(6));
-        System.out.println("Weekday 7: " + weekday_name(7));
-        System.out.println("Weekday 0: " + weekday_name(0));
+        System.out.println("Weekday 1: " + weekdayName(1));
+        System.out.println("Weekday 2: " + weekdayName(2));
+        System.out.println("Weekday 3: " + weekdayName(3));
+        System.out.println("Weekday 4: " + weekdayName(4));
+        System.out.println("Weekday 5: " + weekdayName(5));
+        System.out.println("Weekday 6: " + weekdayName(6));
+        System.out.println("Weekday 7: " + weekdayName(7));
+        System.out.println("Weekday 0: " + weekdayName(0));
         System.out.println();
-        System.out.println("Weekday 43: " + weekday_name(43));
-        System.out.println("Weekday 17: " + weekday_name(17));
-        System.out.println("Weekday -1: " + weekday_name(-1));
+        System.out.println("Weekday 43: " + weekdayName(43));
+        System.out.println("Weekday 17: " + weekdayName(17));
+        System.out.println("Weekday -1: " + weekdayName(-1));
 
         GregorianCalendar cal = new GregorianCalendar();
         int dow = cal.get(GregorianCalendar.DAY_OF_WEEK);
 
-        System.out.println("\nToday is a " + weekday_name(dow) + "!");
+        System.out.println("\nToday is a " + weekdayName(dow) + "!");
     }
 }

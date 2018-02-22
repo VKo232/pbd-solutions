@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class CountingMachineRevisited {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Count from: ");
+        int start = Integer.parseInt(sc.nextLine());
+        System.out.print("Count to  : ");
+        int end = Integer.parseInt(sc.nextLine());
+        System.out.print("Count by  : ");
+        int interval = Integer.parseInt(sc.nextLine());
+        for (int n = start; n <= end; n += interval) {
+            System.out.println(n + " ");
+        }
+    }
+}

@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class KeySale2 {
+   public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int choice;
+        int keys = 0;
+        int price = 10;
+
+        System.out.println("This is a keychain store\n");
+        while(true) {
+            System.out.print("1. Add Keychains to Order\n2. Remove Keychains from Order\n3. View Current Order\n4. Checkout\nWhats your choice? ");
+            choice = Integer.parseInt(sc.nextLine());
+            if(choice == 1) {
+                keys = add(keys);
+            } else if (choice == 2) {
+                keys = remove(keys);
+            } else if (choice == 3) {
+                view(keys, price);
+            } else if (choice == 4) {
+                checkout(keys, price);
+                break;
+            }
+        }
+        System.out.print("The program is done");
+    }
+
+    public static int add(int keys) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("You have " + keys + " keychains. How many to add? ");
+        int totalKeys = keys + Integer.parseInt(sc.nextLine());
+        System.out.println("You now have " + totalKeys + "keychains");
+        return totalKeys;
+    }
+    public static int remove(int keys) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("You have " + keys + " keychains. How many to remove? ");
+        int totalKeys = keys - Integer.parseInt(sc.nextLine());
+        System.out.println("You now have " + totalKeys + "keychains");
+        return totalKeys;
+    }
+    public static void view(int keys, int price) {
+        System.out.println("You have " + keys + " keychains.");
+        System.out.println("Keychains cost $" + price + " each.");
+        System.out.println("Total cost is $" + (keys * 10));
+    }
+    public static void checkout(int keys, int price) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Checkout");
+        System.out.print("What is your name? ");
+        String name = sc.nextLine();
+        System.out.println("You have " + keys + " keychains.");
+        System.out.println("Keychains cost $" + price + " each.");
+        System.out.println("Total cost is $" + (keys * 10));
+        System.out.println("Thanks for ordering, " + name);
+    }
+}

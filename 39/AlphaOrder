@@ -8,14 +8,14 @@ public class AlphaOrder {
         System.out.print("Last Name: ");
         name = sc.nextLine();
         
-        if(name.compareToIgnoreCase("c") <= 0) {
+        if(name.compareToIgnoreCase("carswell") <= 0) {
             System.out.println("you don't have to wait long, " + name);
-        } else if(name.compareToIgnoreCase("j") <= 0) {
+        } else if(name.compareToIgnoreCase("jones") <= 0) {
             System.out.println("That's too bad, " + name);
-        } else if(name.compareToIgnoreCase("s") <= 0) {
+        } else if(name.compareToIgnoreCase("smith") <= 0) {
             System.out.println("looks like a bit of a wait, " + name);
-        } else if(name.compareToIgnoreCase("y") <= 0) {
-            System.out.println("t's gonna be a while, " + name);
+        } else if(name.compareToIgnoreCase("young") <= 0) {
+            System.out.println("it's gonna be a while, " + name);
         } else {
             System.out.println("not going anywhere for a while, " + name);
         }

@@ -1,0 +1,37 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class LimitedHiLo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Random rand = new Random();
+        int guess = 0;
+        int num = 1 + rand.nextInt(100);
+        int tries = 1;
+        
+        System.out.println("Im thinking of a num between 1-100 \nYou have 7 guesses");
+        System.out.print("Try 1: ");
+        guess = sc.nextInt();
+        while(guess != num && tries < 7) {
+            if(num > guess) {
+                System.out.println("\nHaha you failed. Too low. ");
+            } else {
+                System.out.println("\nHaha you failed. Too high. ");
+            }
+            tries++;
+            System.out.print("Try " + tries + ": ");
+            guess = sc.nextInt();
+        }
+        if(guess == num) {
+            System.out.print("\nYou got it somehow. ");
+        } else {
+            if(num > guess) {
+                System.out.println("\nHaha you failed. Too low. ");
+            } else {
+                System.out.println("\nHaha you failed. Too high. ");
+            }
+            System.out.println("The number was " + num);
+        }
+
+    }    
+}

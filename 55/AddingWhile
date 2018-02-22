@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class AddingWhile {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int sum = 0;
+        int num = 1;
+        
+        System.out.println("Im going to add numbers");
+        System.out.print("Number: ");
+        num = sc.nextInt();
+        sum += num;
+        System.out.println("The total is " + sum);
+        while(num != 0) {
+            System.out.print("Number: ");
+            num = sc.nextInt();
+            sum += num;
+            System.out.println("The total is " + sum);
+        }        
+    }    
+}

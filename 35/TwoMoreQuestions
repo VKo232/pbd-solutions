@@ -3,28 +3,29 @@ import java.util.Scanner;
 public class TwoMoreQuestions {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        String type, place, answer;
+        String type, place;
+        String answer = "";
         
         System.out.println("TWO QUESTIONS!");
         System.out.println("Think of a something, and I'll try to guess it.\n");
         System.out.println("Question 1) Does it stay inside or outside or both?");
         System.out.print(">");
-        type = sc.nextLine();
-        System.out.println("\nQuestion 2) Is it a living thing?");
+        place = sc.nextLine();
+        System.out.println("\nQuestion 2) Is it a living thing?(alive/not alive)");
         System.out.print(">");
-        place = sc.nextLine();        
+        type = sc.nextLine();        
         
         if (type.equalsIgnoreCase("alive") && place.equalsIgnoreCase("inside")) {
             answer = "houseplant";
-        } else if (type.equalsIgnoreCase("not alive") && place.equalsIgnoreCase("inside") {
+        } else if (type.equalsIgnoreCase("not alive") && place.equalsIgnoreCase("inside")) {
             answer = "shower curtain";
-        } else if (type.equalsIgnoreCase("not alive") && place.equalsIgnoreCase("outside") {
+        } else if (type.equalsIgnoreCase("not alive") && place.equalsIgnoreCase("outside")) {
             answer = "billboard";
-        } else if (type.equalsIgnoreCase("not alive") && place.equalsIgnoreCase("both") {
+        } else if (type.equalsIgnoreCase("not alive") && place.equalsIgnoreCase("both")) {
             answer = "cell phone";
-        } else if (type.equalsIgnoreCase("alive") && place.equalsIgnoreCase("outside") {
+        } else if (type.equalsIgnoreCase("alive") && place.equalsIgnoreCase("outside")) {
             answer = "bison";
-        } else if (type.equalsIgnoreCase("alive") && place.equalsIgnoreCase("both") {
+        } else if (type.equalsIgnoreCase("alive") && place.equalsIgnoreCase("both")) {
             answer = "dog";
         } 
         System.out.println("My guess is that you are thinking of a " + answer);

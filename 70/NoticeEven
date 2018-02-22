@@ -1,0 +1,11 @@
+public class NoticeEven {
+    public static void main(String[] args){
+
+        for (int n = 1; n <= 20; n++) {
+            System.out.print("\n" + n);
+            if(n % 2 == 0) {
+                System.out.print("<");
+            }
+        }
+    }
+}
