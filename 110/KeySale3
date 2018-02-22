@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+public class KeySale3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int choice;
+        int keys = 0;
+        double price = 10;
+        double tax = .13;
+        double additional = 1;
+        double shipping = 5;
+
+        System.out.println("This is a keychain store\n");
+        while(true) {
+            System.out.print("\n1. Add Keychains to Order\n2. Remove Keychains from Order\n3. View Current Order\n4. Checkout\nWhats your choice? ");
+            choice = Integer.parseInt(sc.nextLine());
+            if(choice == 1) {
+                keys = add(keys);
+            } else if (choice == 2) {
+                keys = remove(keys);
+            } else if (choice == 3) {
+                view(keys, price, shipping, tax, additional);
+            } else if (choice == 4) {
+                checkout(keys, price, shipping, tax, additional);
+                break;
+            } else {
+                System.out.println("Invalid choice, please try again");
+            }
+        }
+        System.out.print("The program is done");
+    }
+
+    public static int add(int keys) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("You have " + keys + " keychains. How many to add? ");
+        int totalKeys = keys + Integer.parseInt(sc.nextLine());
+        System.out.println("You now have " + totalKeys + " keychains");
+        return totalKeys;
+    }
+    public static int remove(int keys) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("You have " + keys + " keychains. How many to remove? ");
+        int removed = Integer.parseInt(sc.nextLine());
+        if(keys - removed >= 0) {
+            int totalKeys = keys - removed;
+            System.out.println("You now have " + totalKeys + " keychains");
+            return totalKeys;
+        } else {
+            System.out.println("You cannot remove this many");
+            return keys;
+        }
+    }
+    public static void view(int keys, double price, double shipping, double tax, double additional) {
+        System.out.println("You have " + keys + " keychains.");
+        System.out.println("Keychains cost $" + price + " each.");
+        System.out.println("Shipping cost is $" + (shipping + (keys - 1) * additional));
+        System.out.println("Subtotal is $" + (keys * price + shipping + (keys - 1) * additional));
+        System.out.println("Tax is $" + (tax * (keys * price + shipping + (keys - 1) * additional)));
+        System.out.println("Total is $" + ((tax + 1) * (keys * price + shipping + (keys - 1) * additional)));
+    }
+    public static void checkout(int keys, double price, double shipping, double tax, double additional) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Checkout");
+        System.out.print("What is your name? ");
+        String name = sc.nextLine();
+        view(keys, price, shipping, tax, additional);
+        System.out.println("Thanks for ordering, " + name);
+    }
+}
