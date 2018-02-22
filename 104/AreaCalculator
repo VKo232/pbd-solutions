@@ -1,0 +1,51 @@
+public class AreaCalculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double area = 0;
+        double side1, side2;
+        while(true) {
+            System.out.print("1) Triangle\n2) Rectangle\n3) Square\n4) Circle\n5) Quit\nWhich shape: ");
+            int input = sc.nextInt();
+
+            if(input == 1) {
+                System.out.print("\nBase: ");
+                side1 = sc.nextDouble();
+                System.out.print("\nHeight: ");
+                side2 = sc.nextDouble();
+                area = triangle(side1, side2);
+
+            } else if(input == 2) {
+                System.out.print("\nLength: ");
+                side1= sc.nextDouble();
+                System.out.print("\nWidth: ");
+                side2 = sc.nextDouble();
+                area = rectangle(side1, side2);
+
+            } else if(input == 3) {
+                System.out.print("\nSide Length: ");
+                side1 = sc.nextDouble();
+                area = rectangle(side1, side1);
+
+            } else if(input == 4) {
+                System.out.print("\nradius: ");
+                side1 = sc.nextDouble();
+                area = circle(side1);
+
+            } else if(input == 5) {
+                break;
+            }
+            System.out.println("\n\nThe area is " + area);
+        }
+        System.out.println("Goodbye");
+
+    }
+    public static double triangle(double base, double height) {
+        return base * height / 2.0;
+    }
+    public static double rectangle(double length, double width) {
+        return length * width;
+    }
+    public static double circle(double radius) {
+        return Math.PI * Math.pow(radius , 2);
+    }
+}
