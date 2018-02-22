@@ -1,0 +1,36 @@
+public class KeySale {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int choice;
+
+        System.out.println("This is a keychain store\n");
+        while(true) {
+            System.out.print("1. Add Keychains to Order\n2. Remove Keychains from Order\n3. View Current Order\n4. Checkout\nWhats your choice? ");
+            choice = sc.nextInt();
+            if(choice == 1) {
+                add();
+            } else if (choice == 2) {
+                remove();
+            } else if (choice == 3) {
+                view();
+            } else if (choice == 4) {
+                checkout();
+                break;
+            }
+        }
+        System.out.print("The program is done");
+    }
+
+    public static void add() {
+        System.out.println("Added keychain to order");
+    }
+    public static void remove() {
+        System.out.println("Removed keychain from order");
+    }
+    public static void view() {
+        System.out.println("Viewed order");
+    }
+    public static void checkout() {
+        System.out.println("Checked out");
+    }
+}
