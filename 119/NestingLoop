@@ -1,0 +1,29 @@
+public class NestingLoop {
+    // inner loop changes faster
+    // then the output changes with the numbers changing slower than the chars
+    // the output will display vertically instead of horizontally
+    // the output will show the numbers from the inner loop on one line and as the outer loop variable changes, a newline is made
+    public static void main(String[] args) {
+        // this is #1 - I'll call it "CN"
+        for (int n = 1; n <= 3; n++) {
+            for (char c = 'A'; c <= 'E'; c++) {
+                System.out.println(c + " " + n);
+            }
+        }
+
+        System.out.println("\n");
+
+        // this is #2 - I'll call it "AB"
+        for (int a=1; a <= 3; a++) {
+            for (int b=1; b <= 3; b++) {
+                System.out.print(a + "-" + b + " ");
+            }
+            // * You will add a line of code here.
+            System.out.println();
+        }
+
+        System.out.println("\n");
+
+    }
+    
+}
