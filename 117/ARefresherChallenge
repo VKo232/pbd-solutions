@@ -1,13 +1,15 @@
 import java.util.*;
 public class ARefresherChallenge {
-    Scanner sc = new Scanner(System.in);
-    String name = sc.nextLine();
-    int num = 10;
-    if(name.equalsIgnoreCase("mitchell")) {
-        num = 5;
-    }
-    for(int i = 0; i < num; i++) {
-        System.out.println(name);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        int num = 10;
+        if(name.equalsIgnoreCase("mitchell")) {
+            num = 5;
+        }
+        for(int i = 0; i < num; i++) {
+            System.out.println(name);
         
+        }
     }
 }
